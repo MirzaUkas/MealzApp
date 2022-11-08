@@ -9,9 +9,6 @@ F
 gradlew,5/b/5bbfa66edb4db3c7c33c5181f43510990d3307f9
 >
 app/.gitignore,5/1/51e1c5d383dfaa35e0e7e5873a0a99355a86880f
-:
-
-.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 g
 7app/src/main/java/mirz/study/mealzapp/ui/theme/Color.kt,b/6/b6975b99755e949e43a2092a449bf7aa4a6e40f5
 w

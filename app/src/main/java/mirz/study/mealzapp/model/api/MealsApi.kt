@@ -1,7 +1,6 @@
 package mirz.study.mealzapp.model.api
 
 import mirz.study.mealzapp.model.MealsCategoriesResponses
-import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
@@ -17,12 +16,12 @@ class MealsWebService {
         api = retrofit.create(MealsApi::class.java)
     }
 
-    fun getMeals(): Call<MealsCategoriesResponses> {
+    suspend fun getMeals(): MealsCategoriesResponses {
         return api.getMeals()
     }
 
     interface MealsApi {
         @GET("categories.php")
-        fun getMeals(): Call<MealsCategoriesResponses>
+        suspend fun getMeals(): MealsCategoriesResponses
     }
 }
